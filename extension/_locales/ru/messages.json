@@ -6,7 +6,7 @@
     "message": "Proxy WebRTC Timezone fix"
   },
   "extensionDescription": {
-    "message": "Простой инструмент управления прокси"
+    "message": "Управление прокси, защита от утечек WebRTC и подмена часового пояса в одном расширении."
   },
   "proxyByPatterns": {
     "message": "Прокси из шаблона"
@@ -265,5 +265,128 @@
   },
   "saveOptions": {
     "message": "Save"
+  },
+  "documentURL": {
+    "message": "URL документа"
+  },
+  "includeHost": {
+    "message": "Включить хост"
+  },
+  "privacy": {
+    "message": "Приватность"
+  },
+  "webrtcProtection": {
+    "message": "Защита WebRTC"
+  },
+  "timezoneSpoofing": {
+    "message": "Подмена часового пояса"
+  },
+  "timezoneLabel": {
+    "message": "Часовой пояс"
+  },
+  "privacySettingsLink": {
+    "message": "Настройки WebRTC и времени →"
+  },
+  "privacyTitle": {
+    "message": "Proxy WebRTC Timezone fix · Приватность"
+  },
+  "privacyIntro": {
+    "message": "Прокси, WebRTC и часовой пояс управляются независимо."
+  },
+  "proxySettingsLink": {
+    "message": "Прокси и импорт настроек →"
+  },
+  "webrtcControl": {
+    "message": "WebRTC Control"
+  },
+  "rtcPolicyLabel": {
+    "message": "Политика IP для WebRTC"
+  },
+  "policyDisableNonProxiedUdp": {
+    "message": "Запретить UDP в обход прокси"
+  },
+  "policyPublicOnly": {
+    "message": "Только публичный интерфейс"
+  },
+  "policyPublicPrivate": {
+    "message": "Публичный и приватный интерфейсы"
+  },
+  "policyChromeDefault": {
+    "message": "Стандартная политика Chrome"
+  },
+  "rtcInject": {
+    "message": "Блокировать RTCPeerConnection, MediaStreamTrack и RTCSessionDescription"
+  },
+  "rtcDevices": {
+    "message": "Блокировать доступ к аудио- и видеоустройствам"
+  },
+  "rtcAdditional": {
+    "message": "Блокировать RTCIceCandidate, RTCDataChannel и RTCConfiguration"
+  },
+  "rtcNote": {
+    "message": "Блокировка объектов WebRTC может отключить звонки на сайтах. После изменения настроек перезагрузите вкладку."
+  },
+  "testWebRTC": {
+    "message": "Проверить WebRTC →"
+  },
+  "timezoneSection": {
+    "message": "Часовой пояс"
+  },
+  "tzLocationLabel": {
+    "message": "Часовой пояс для сайтов"
+  },
+  "tzRandom": {
+    "message": "Случайный часовой пояс при загрузке вкладки"
+  },
+  "tzManual": {
+    "message": "Задать смещение UTC вручную"
+  },
+  "tzOffsetLabel": {
+    "message": "Смещение UTC в минутах (например, Москва: 180)"
+  },
+  "tzNote": {
+    "message": "По умолчанию смещение определяется по базе часовых поясов Chrome. Ручное смещение может расходиться с форматированием Intl выбранной зоны."
+  },
+  "testTimezone": {
+    "message": "Проверить часовой пояс →"
+  },
+  "resetTimezone": {
+    "message": "Сбросить часовой пояс"
+  },
+  "privacyApplyNote": {
+    "message": "Настройки применяются к новым загрузкам страниц. Чтобы отключить уже внедрённые изменения, перезагрузите вкладку. Профили и пароли старых расширений автоматически не переносятся."
+  },
+  "statusSaved": {
+    "message": "Сохранено. Перезагрузите нужные вкладки."
+  },
+  "statusTzReset": {
+    "message": "Часовой пояс сброшен. Перезагрузите нужные вкладки."
+  },
+  "warnProxyControlled": {
+    "message": "Прокси управляется другим расширением."
+  },
+  "warnRtcNotApplied": {
+    "message": "Политика WebRTC не применена: проверьте другие расширения или политики Chrome."
+  },
+  "errNoBackground": {
+    "message": "Фоновый процесс не ответил"
+  },
+  "errUnknownTimezone": {
+    "message": "Неизвестный часовой пояс"
+  },
+  "errUnknownSetting": {
+    "message": "Неизвестная настройка"
+  },
+  "errInvalidSetting": {
+    "message": "Некорректная настройка"
+  },
+  "errUnknownPolicy": {
+    "message": "Неизвестная политика WebRTC"
+  },
+  "errOffsetRange": {
+    "message": "Смещение должно быть числом от −840 до 840 минут"
+  },
+  "errUnknownCommand": {
+    "message": "Неизвестная команда"
   }
 }

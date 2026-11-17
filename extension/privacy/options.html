@@ -1,45 +1,45 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Proxy WebRTC Timezone fix · Приватность</title>
+  <title data-i18n="privacyTitle"></title>
   <link rel="stylesheet" href="options.css">
   <script type="module" src="options.js"></script>
 </head>
 <body>
   <main>
-    <header><span>PROXY WEBRTC TIMEZONE FIX</span><h1>Приватность</h1><p>Прокси, WebRTC и часовой пояс управляются независимо.</p><a href="../content/options.html">Прокси и импорт настроек →</a></header>
+    <header><span>PROXY WEBRTC TIMEZONE FIX</span><h1 data-i18n="privacy"></h1><p data-i18n="privacyIntro"></p><a href="../content/options.html" data-i18n="proxySettingsLink"></a></header>
     <form id="settings">
       <section>
-        <label class="toggle"><h2>WebRTC Control</h2><input type="checkbox" id="rtc-enabled" aria-label="Защита WebRTC"></label>
-        <label for="rtc-policy">Политика IP для WebRTC</label>
+        <label class="toggle"><h2 data-i18n="webrtcControl"></h2><input type="checkbox" id="rtc-enabled" data-i18n="webrtcProtection|aria-label"></label>
+        <label for="rtc-policy" data-i18n="rtcPolicyLabel"></label>
         <select id="rtc-policy">
-          <option value="disable_non_proxied_udp">Запретить UDP в обход прокси</option>
-          <option value="default_public_interface_only">Только публичный интерфейс</option>
-          <option value="default_public_and_private_interfaces">Публичный и приватный интерфейсы</option>
-          <option value="default">Стандартная политика Chrome</option>
+          <option value="disable_non_proxied_udp" data-i18n="policyDisableNonProxiedUdp"></option>
+          <option value="default_public_interface_only" data-i18n="policyPublicOnly"></option>
+          <option value="default_public_and_private_interfaces" data-i18n="policyPublicPrivate"></option>
+          <option value="default" data-i18n="policyChromeDefault"></option>
         </select>
-        <label><input type="checkbox" id="rtc-inject"> Блокировать RTCPeerConnection, MediaStreamTrack и RTCSessionDescription</label>
-        <label><input type="checkbox" id="rtc-devices"> Блокировать доступ к аудио- и видеоустройствам</label>
-        <label><input type="checkbox" id="rtc-additional"> Блокировать RTCIceCandidate, RTCDataChannel и RTCConfiguration</label>
-        <p class="note">Блокировка объектов WebRTC может отключить звонки на сайтах. После изменения настроек перезагрузи вкладку.</p>
-        <a href="https://webbrowsertools.com/test-webrtc-leak/" target="_blank" rel="noreferrer">Проверить WebRTC →</a>
+        <label><input type="checkbox" id="rtc-inject"> <span data-i18n="rtcInject"></span></label>
+        <label><input type="checkbox" id="rtc-devices"> <span data-i18n="rtcDevices"></span></label>
+        <label><input type="checkbox" id="rtc-additional"> <span data-i18n="rtcAdditional"></span></label>
+        <p class="note" data-i18n="rtcNote"></p>
+        <a href="https://webbrowsertools.com/test-webrtc-leak/" target="_blank" rel="noreferrer" data-i18n="testWebRTC"></a>
       </section>
       <section>
-        <label class="toggle"><h2>Часовой пояс</h2><input type="checkbox" id="tz-enabled" aria-label="Подмена часового пояса"></label>
-        <label for="tz-location">Часовой пояс для сайтов</label>
+        <label class="toggle"><h2 data-i18n="timezoneSection"></h2><input type="checkbox" id="tz-enabled" data-i18n="timezoneSpoofing|aria-label"></label>
+        <label for="tz-location" data-i18n="tzLocationLabel"></label>
         <select id="tz-location"></select>
-        <label><input type="checkbox" id="tz-random"> Случайный часовой пояс при загрузке вкладки</label>
-        <label><input type="checkbox" id="tz-manual"> Задать смещение UTC вручную</label>
-        <label for="tz-offset">Смещение UTC в минутах (например, Москва: 180)</label>
+        <label><input type="checkbox" id="tz-random"> <span data-i18n="tzRandom"></span></label>
+        <label><input type="checkbox" id="tz-manual"> <span data-i18n="tzManual"></span></label>
+        <label for="tz-offset" data-i18n="tzOffsetLabel"></label>
         <input id="tz-offset" type="number" min="-840" max="840" step="1" disabled>
-        <p class="note">По умолчанию смещение определяется по базе часовых поясов Chrome. Ручное смещение может расходиться с форматированием Intl выбранной зоны.</p>
-        <div class="links"><a href="https://webbrowsertools.com/timezone/" target="_blank" rel="noreferrer">Проверить часовой пояс →</a><button id="reset-timezone" type="button" class="secondary">Сбросить часовой пояс</button></div>
+        <p class="note" data-i18n="tzNote"></p>
+        <div class="links"><a href="https://webbrowsertools.com/timezone/" target="_blank" rel="noreferrer" data-i18n="testTimezone"></a><button id="reset-timezone" type="button" class="secondary" data-i18n="resetTimezone"></button></div>
       </section>
-      <footer><button type="submit" id="save">Сохранить</button><p id="status" role="status" aria-live="polite"></p></footer>
+      <footer><button type="submit" id="save" data-i18n="save"></button><p id="status" role="status" aria-live="polite"></p></footer>
     </form>
-    <p class="note">Настройки применяются к новым загрузкам страниц. Чтобы отключить уже внедрённые изменения, перезагрузи вкладку. Профили и пароли старых расширений автоматически не переносятся.</p>
+    <p class="note" data-i18n="privacyApplyNote"></p>
   </main>
 </body>
 </html>

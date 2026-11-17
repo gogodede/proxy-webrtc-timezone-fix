@@ -6,7 +6,7 @@
     "message": "Proxy WebRTC Timezone fix"
   },
   "extensionDescription": {
-    "message": "Easy to use advanced Proxy Management tool for everyone"
+    "message": "Proxy management, WebRTC leak control and timezone spoofing in one extension."
   },
   "proxyByPatterns": {
     "message": "Proxy by Patterns"
@@ -349,5 +349,122 @@
   },
   "documentURL": {
     "message": "Document URL"
+  },
+  "privacy": {
+    "message": "Privacy"
+  },
+  "webrtcProtection": {
+    "message": "WebRTC protection"
+  },
+  "timezoneSpoofing": {
+    "message": "Timezone spoofing"
+  },
+  "timezoneLabel": {
+    "message": "Timezone"
+  },
+  "privacySettingsLink": {
+    "message": "WebRTC & timezone settings →"
+  },
+  "privacyTitle": {
+    "message": "Proxy WebRTC Timezone fix · Privacy"
+  },
+  "privacyIntro": {
+    "message": "Proxy, WebRTC and timezone are controlled independently."
+  },
+  "proxySettingsLink": {
+    "message": "Proxy & settings import →"
+  },
+  "webrtcControl": {
+    "message": "WebRTC Control"
+  },
+  "rtcPolicyLabel": {
+    "message": "WebRTC IP handling policy"
+  },
+  "policyDisableNonProxiedUdp": {
+    "message": "Disable non-proxied UDP"
+  },
+  "policyPublicOnly": {
+    "message": "Public interface only"
+  },
+  "policyPublicPrivate": {
+    "message": "Public and private interfaces"
+  },
+  "policyChromeDefault": {
+    "message": "Chrome default policy"
+  },
+  "rtcInject": {
+    "message": "Block RTCPeerConnection, MediaStreamTrack and RTCSessionDescription"
+  },
+  "rtcDevices": {
+    "message": "Block access to audio and video devices"
+  },
+  "rtcAdditional": {
+    "message": "Block RTCIceCandidate, RTCDataChannel and RTCConfiguration"
+  },
+  "rtcNote": {
+    "message": "Blocking WebRTC objects may break calls on some sites. Reload tabs after changing settings."
+  },
+  "testWebRTC": {
+    "message": "Test WebRTC →"
+  },
+  "timezoneSection": {
+    "message": "Timezone"
+  },
+  "tzLocationLabel": {
+    "message": "Timezone reported to sites"
+  },
+  "tzRandom": {
+    "message": "Random timezone per tab"
+  },
+  "tzManual": {
+    "message": "Set UTC offset manually"
+  },
+  "tzOffsetLabel": {
+    "message": "UTC offset in minutes (e.g. Moscow: 180)"
+  },
+  "tzNote": {
+    "message": "By default the offset is resolved from Chrome's timezone database. A manual offset may differ from Intl formatting of the selected zone."
+  },
+  "testTimezone": {
+    "message": "Test timezone →"
+  },
+  "resetTimezone": {
+    "message": "Reset timezone"
+  },
+  "privacyApplyNote": {
+    "message": "Settings apply to new page loads. Reload a tab to undo injected changes. Settings and connections from the old extensions are not migrated automatically."
+  },
+  "statusSaved": {
+    "message": "Saved. Reload the relevant tabs."
+  },
+  "statusTzReset": {
+    "message": "Timezone reset. Reload the relevant tabs."
+  },
+  "warnProxyControlled": {
+    "message": "Proxy is controlled by another extension."
+  },
+  "warnRtcNotApplied": {
+    "message": "WebRTC policy not applied: check other extensions or Chrome policies."
+  },
+  "errNoBackground": {
+    "message": "Background worker did not respond"
+  },
+  "errUnknownTimezone": {
+    "message": "Unknown timezone"
+  },
+  "errUnknownSetting": {
+    "message": "Unknown setting"
+  },
+  "errInvalidSetting": {
+    "message": "Invalid setting"
+  },
+  "errUnknownPolicy": {
+    "message": "Unknown WebRTC policy"
+  },
+  "errOffsetRange": {
+    "message": "Offset must be a number between −840 and 840 minutes"
+  },
+  "errUnknownCommand": {
+    "message": "Unknown command"
   }
 }

@@ -69,13 +69,13 @@
         <!-- /template -->
       </section>
 
-      <section class="toolkit" aria-label="Приватность">
-        <label class="toolkit-row"><strong>WebRTC · защита</strong><input id="rtc-enabled" type="checkbox"></label>
-        <label class="toolkit-row"><strong>Подмена часового пояса</strong><input id="tz-enabled" type="checkbox"></label>
-        <label for="tz-location">Часовой пояс</label>
-        <select id="tz-location" aria-label="Часовой пояс"></select>
+      <section class="toolkit" data-i18n="privacy|aria-label">
+        <label class="toolkit-row"><strong data-i18n="webrtcProtection"></strong><input id="rtc-enabled" type="checkbox"></label>
+        <label class="toolkit-row"><strong data-i18n="timezoneSpoofing"></strong><input id="tz-enabled" type="checkbox"></label>
+        <label for="tz-location" data-i18n="timezoneLabel"></label>
+        <select id="tz-location" data-i18n="timezoneLabel|aria-label"></select>
         <p id="toolkit-status" role="status"></p>
-        <a href="../privacy/options.html" target="_blank">Настройки WebRTC и времени →</a>
+        <a href="../privacy/options.html" target="_blank" data-i18n="privacySettingsLink"></a>
       </section>
       <footer>
         <button type="button" data-i18n="options"></button>

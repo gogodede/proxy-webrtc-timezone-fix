@@ -6,7 +6,7 @@
     "message": "Proxy WebRTC Timezone fix"
   },
   "extensionDescription": {
-    "message": "Ferramenta avançada de gerenciamento de proxy fácil de usar para todos"
+    "message": "Gerenciamento de proxy, controle de vazamento de WebRTC e falsificação de fuso horário em uma única extensão."
   },
   "error": {
     "message": "Falha"
@@ -394,5 +394,29 @@
   },
   "importSucceeded": {
     "message": "Ler e armazenar proxies de $1."
+  },
+  "documentURL": {
+    "message": "URL do documento"
+  },
+  "proxyByPatterns": {
+    "message": "Proxy por padrões"
+  },
+  "disable": {
+    "message": "Desativar"
+  },
+  "setProxy": {
+    "message": "Definir proxy"
+  },
+  "includeHost": {
+    "message": "Incluir host"
+  },
+  "excludeHost": {
+    "message": "Excluir host"
+  },
+  "setTabProxy": {
+    "message": "Definir proxy da aba"
+  },
+  "unsetTabProxy": {
+    "message": "Remover proxy da aba"
   }
 }

@@ -6,7 +6,7 @@
     "message": "Proxy WebRTC Timezone fix"
   },
   "extensionDescription": {
-    "message": "Herramienta Avanzada de Gestión de Proxies fácil de usar para todos"
+    "message": "Gestión de proxies, control de fugas de WebRTC y suplantación de zona horaria en una sola extensión."
   },
   "error": {
     "message": "Error"
@@ -394,5 +394,29 @@
   },
   "importSucceeded": {
     "message": "Leídos y almacenados $1 proxies."
+  },
+  "documentURL": {
+    "message": "URL del documento"
+  },
+  "proxyByPatterns": {
+    "message": "Proxy por patrones"
+  },
+  "disable": {
+    "message": "Desactivar"
+  },
+  "setProxy": {
+    "message": "Establecer proxy"
+  },
+  "includeHost": {
+    "message": "Incluir host"
+  },
+  "excludeHost": {
+    "message": "Excluir host"
+  },
+  "setTabProxy": {
+    "message": "Establecer proxy de pestaña"
+  },
+  "unsetTabProxy": {
+    "message": "Quitar proxy de pestaña"
   }
 }

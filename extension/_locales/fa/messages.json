@@ -6,7 +6,7 @@
     "message": "Proxy WebRTC Timezone fix"
   },
   "extensionDescription": {
-    "message": "ابزاری آسان و پیشرفتهٔ مدیریت پیشکار برای همه"
+    "message": "مدیریت پروکسی، کنترل نشت WebRTC و جعل منطقه زمانی در یک افزونه."
   },
   "proxyByPatterns": {
     "message": "پیشکار بر اساس الگو‌ها"
@@ -232,5 +232,20 @@
   },
   "fileTypeError": {
     "message": "قالب پرونده پشتیبانی نشده"
+  },
+  "setProxy": {
+    "message": "تنظیم پروکسی"
+  },
+  "includeHost": {
+    "message": "افزودن میزبان"
+  },
+  "excludeHost": {
+    "message": "حذف میزبان"
+  },
+  "setTabProxy": {
+    "message": "تنظیم پروکسی برگه"
+  },
+  "unsetTabProxy": {
+    "message": "حذف پروکسی برگه"
   }
 }

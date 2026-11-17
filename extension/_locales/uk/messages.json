@@ -6,7 +6,7 @@
     "message": "Proxy WebRTC Timezone fix"
   },
   "extensionDescription": {
-    "message": "Зручний та розширений інструмент керування проксі-серверами для кожного"
+    "message": "Керування проксі, захист від витоків WebRTC та підміна часового поясу в одному розширенні."
   },
   "proxyByPatterns": {
     "message": "Проксі за шаблонами"
@@ -361,5 +361,8 @@
   },
   "saveOptions": {
     "message": "Зберегти"
+  },
+  "documentURL": {
+    "message": "URL документа"
   }
 }

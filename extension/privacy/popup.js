@@ -1,4 +1,4 @@
-import {request, fillZones, warning} from './ui.js';
+import {request, fillZones, warning, msg} from './ui.js';
 const rtc = document.querySelector('#rtc-enabled');
 const tz = document.querySelector('#tz-enabled');
 const location = document.querySelector('#tz-location');
@@ -15,7 +15,7 @@ async function update(patch) {
   try {
     const data = await request('save', {patch});
     render(data);
-    status.textContent = warning(data) || 'Сохранено. Перезагрузи нужные вкладки.';
+    status.textContent = warning(data) || msg('statusSaved');
   } catch (error) {status.textContent = error.message;}
 }
 rtc.addEventListener('change', () => update({webrtc: {enabled: rtc.checked}}));

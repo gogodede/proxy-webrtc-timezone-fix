@@ -6,6 +6,7 @@ const defaults = {
 };
 const policies = ['default', 'default_public_and_private_interfaces', 'default_public_interface_only', 'disable_non_proxied_udp'];
 const randomZones = new Map();
+const msg = key => chrome.i18n.getMessage(key) || key;
 let pending = Promise.resolve();
 
 async function read() {
@@ -14,7 +15,7 @@ async function read() {
 }
 
 function analyze(location) {
-  if (!Object.hasOwn(offsets, location)) throw new Error('Неизвестный часовой пояс');
+  if (!Object.hasOwn(offsets, location)) throw new Error(msg('errUnknownTimezone'));
   const date = new Date();
   // Use Chrome's timezone database rather than the old Moment 2020 database.
   const parts = new Intl.DateTimeFormat('en-US', {
@@ -49,16 +50,16 @@ async function save(patch) {
   const settings = await read();
   for (const group of ['webrtc', 'timezone']) {
     for (const [key, value] of Object.entries(patch?.[group] || {})) {
-      if (!Object.hasOwn(defaults[group], key)) throw new Error('Неизвестная настройка');
-      if (typeof defaults[group][key] === 'boolean' && typeof value !== 'boolean') throw new Error('Некорректная настройка');
+      if (!Object.hasOwn(defaults[group], key)) throw new Error(msg('errUnknownSetting'));
+      if (typeof defaults[group][key] === 'boolean' && typeof value !== 'boolean') throw new Error(msg('errInvalidSetting'));
       settings[group][key] = value;
     }
   }
-  if (!policies.includes(settings.webrtc.policy)) throw new Error('Неизвестная политика WebRTC');
+  if (!policies.includes(settings.webrtc.policy)) throw new Error(msg('errUnknownPolicy'));
   analyze(settings.timezone.location);
   const offset = settings.timezone.offset;
   if (offset !== null && (typeof offset !== 'number' || !Number.isFinite(offset) || Math.abs(offset) > 840)) {
-    throw new Error('Смещение должно быть числом от −840 до 840 минут');
+    throw new Error(msg('errOffsetRange'));
   }
   await applyWebRTC(settings);
   await chrome.storage.local.set({toolkit: settings});
@@ -100,7 +101,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
       case 'resetTimezone': return save({timezone: defaults.timezone});
       case 'analyze': return analyze(message.location);
       case 'page': return pagePreferences(sender);
-      default: throw new Error('Неизвестная команда');
+      default: throw new Error(msg('errUnknownCommand'));
     }
   };
   const result = pending.then(task);

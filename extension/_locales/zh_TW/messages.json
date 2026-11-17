@@ -6,7 +6,7 @@
     "message": "Proxy WebRTC Timezone fix"
   },
   "extensionDescription": {
-    "message": "任誰都能快速上手的進階代理伺服器管理工具"
+    "message": "單一擴充功能整合代理管理、WebRTC 外洩防護與時區偽裝。"
   },
   "error": {
     "message": "錯誤"
@@ -394,5 +394,29 @@
   },
   "importSucceeded": {
     "message": "讀取並匯入 $1 個代理伺服器設定"
+  },
+  "documentURL": {
+    "message": "文件 URL"
+  },
+  "proxyByPatterns": {
+    "message": "依規則使用 Proxy"
+  },
+  "disable": {
+    "message": "停用"
+  },
+  "setProxy": {
+    "message": "設定 Proxy"
+  },
+  "includeHost": {
+    "message": "包含主機"
+  },
+  "excludeHost": {
+    "message": "排除主機"
+  },
+  "setTabProxy": {
+    "message": "設定分頁 Proxy"
+  },
+  "unsetTabProxy": {
+    "message": "移除分頁 Proxy"
   }
 }

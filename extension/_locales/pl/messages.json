@@ -6,7 +6,7 @@
     "message": "Proxy WebRTC Timezone fix"
   },
   "extensionDescription": {
-    "message": "Łatwe w użyciu zaawansowane narzędzie do zarządzania proxy dla każdego"
+    "message": "Zarządzanie proxy, kontrola wycieków WebRTC i podmiana strefy czasowej w jednym rozszerzeniu."
   },
   "proxyByPatterns": {
     "message": "Proxy według wzorców"
@@ -229,5 +229,20 @@
   },
   "fileTypeError": {
     "message": "Nieobsługiwany format pliku"
+  },
+  "setProxy": {
+    "message": "Ustaw proxy"
+  },
+  "includeHost": {
+    "message": "Uwzględnij hosta"
+  },
+  "excludeHost": {
+    "message": "Wyklucz hosta"
+  },
+  "setTabProxy": {
+    "message": "Ustaw proxy karty"
+  },
+  "unsetTabProxy": {
+    "message": "Usuń proxy karty"
   }
 }

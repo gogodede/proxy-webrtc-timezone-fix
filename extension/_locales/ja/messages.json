@@ -6,7 +6,7 @@
     "message": "Proxy WebRTC Timezone fix"
   },
   "extensionDescription": {
-    "message": "誰でも使いやすい先進的なプロキシー管理ツール"
+    "message": "プロキシ管理、WebRTCリーク対策、タイムゾーン偽装を一つの拡張機能に。"
   },
   "proxyByPatterns": {
     "message": "パターンによるプロキシー"
@@ -265,5 +265,11 @@
   },
   "saveOptions": {
     "message": "保存"
+  },
+  "documentURL": {
+    "message": "ドキュメントURL"
+  },
+  "includeHost": {
+    "message": "ホストを含める"
   }
 }

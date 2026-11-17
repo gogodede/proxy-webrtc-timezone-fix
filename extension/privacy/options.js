@@ -1,4 +1,5 @@
-import {request, fillZones, warning} from './ui.js';
+import {request, fillZones, warning, i18n, msg} from './ui.js';
+i18n();
 const byId = id => document.getElementById(id);
 const status = byId('status');
 fillZones(byId('tz-location'));
@@ -35,12 +36,12 @@ byId('settings').addEventListener('submit', async event => {
     };
     const data = await request('save', {patch});
     render(data);
-    status.textContent = warning(data) || 'Сохранено. Перезагрузи нужные вкладки.';
+    status.textContent = warning(data) || msg('statusSaved');
   } catch (error) {status.textContent = error.message;}
   finally {button.disabled = false;}
 });
 byId('reset-timezone').addEventListener('click', async () => {
-  try {render(await request('resetTimezone')); status.textContent ||= 'Часовой пояс сброшен. Перезагрузи нужные вкладки.';}
+  try {render(await request('resetTimezone')); status.textContent ||= msg('statusTzReset');}
   catch (error) {status.textContent = error.message;}
 });
 try {render(await request('get'));} catch (error) {status.textContent = error.message;}

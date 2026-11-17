@@ -6,7 +6,7 @@
     "message": "Proxy WebRTC Timezone fix"
   },
   "extensionDescription": {
-    "message": "简单易用的高级代理管理工具，适合所有用户"
+    "message": "一款扩展同时提供代理管理、WebRTC 泄漏防护与时区伪装。"
   },
   "proxyByPatterns": {
     "message": "按规则代理"
@@ -343,5 +343,8 @@
   },
   "save": {
     "message": "保存"
+  },
+  "documentURL": {
+    "message": "文档 URL"
   }
 }

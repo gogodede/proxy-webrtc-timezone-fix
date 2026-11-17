@@ -4,7 +4,7 @@ if (select) {
   select.disabled = true;
   const link = document.createElement('a');
   link.href = '../privacy/options.html';
-  link.textContent = 'Настройки WebRTC и часового пояса →';
+  link.textContent = browser.i18n.getMessage('privacySettingsLink') || 'WebRTC & timezone settings';
   select.after(link);
 }
 const toggle = document.querySelector('#toggleWebRTC');
