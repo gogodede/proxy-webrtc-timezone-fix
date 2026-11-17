@@ -1,0 +1,7 @@
+:root { --width: 30em; }
+.list { min-height: 5em; max-height: 16em; }
+.toolkit { padding: 12px; border-top: 1px solid var(--dim); display: grid; gap: 8px; }
+.toolkit-row { display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+.toolkit input[type=checkbox] { width: 17px; height: 17px; accent-color: #86532b; }
+.toolkit select { width: 100%; }
+.toolkit p { font-size: 11px; margin: 0; line-height: 1.4; }

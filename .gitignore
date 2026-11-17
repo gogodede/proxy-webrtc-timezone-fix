@@ -1,0 +1,5 @@
+.DS_Store
+dist/
+archives/
+sources/
+*.zip
