@@ -346,5 +346,8 @@
   },
   "save": {
     "message": "Save"
+  },
+  "documentURL": {
+    "message": "Document URL"
   }
 }
